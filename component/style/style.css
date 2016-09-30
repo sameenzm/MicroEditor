@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body,
+div, p,
+ul,
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #959595;
+}
+
+.btn-style {
+    width: 80px;
+    height: 30px;
+    background: #5f93ff;
+    border: 1px solid #0074d9;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.editor-main {
+    position: relative;
+    border: 1px solid #71A9FC;
+    width: 300px;
+    height: 307px;
+}
+
+.editor-main #editor {
+    font-size: 14px;
+    line-height: 16px;
+    height: 302px;
+    width: 256px;
+    border: 0;
+    outline: none;
+    resize:none;  /* 让编辑器不可拖拽改变大小 */
+    word-wrap: normal;
+    overflow-x: scroll;
+}
+
+.editor-main .gutter {
+    float: left;
+    background: #eee;
+    height: 290px;
+    /*overflow: hidden;*/
+}
+.editor-main .line-number {
+    font-size: 16px;
+    line-height: 16px;
+    width: 30px;
+    text-align: right;
+    padding-right:10px;
+}
+
+.select-case {
+    width: 330px;
+    height: 305px;
+    overflow: auto; /* 超出部分出滚动条 */
+}
+
+.select-case .items {
+    padding: 10px 0;
+}
+
+.select-case .item {
+    padding: 0 10px;
+    line-height: 26px;
+}
+
+.select-case .item:hover {
+    background: #f1f8ff;
+}
+
+.select-case .add-icon {
+    font-size: 20px;
+    font-weight: 900;
+    color: #717CFC;
+    float: right;
+    cursor: pointer;
+}
+
+.input-main {
+    height: 28px;
+}
+
+.input-main .search-input {
+    border: 0;
+    height: 26px;
+    outline: none;
+    width: 273px;
+}
+
+.input-main .search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    color: #0074D9;
+    float: right;
+    padding: 4px 10px;
+}
+
+.multi-editor .explain {
+    background: #eee;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.select-part {
+    border: 2px solid #959595;
+    margin: 10px;
+}
+
+.editor-part {
+    background: #eee;
+    border: 1px solid #959595;
+    margin: 10px;
+}
+
+.editor-part .count-words {
+    line-height: 28px;
+    padding: 4px;
+}
+
+.multi-editor .arrow {
+    vertical-align: top;
+    line-height: 380px;
+}
+.multi-editor .state {
+    padding: 0 12px;
+}
+
+.state .operate {
+    float: right;
+}
+
+.multi-editor .tips {
+    text-align: left;
+    display: inline;
+}
+.multi-editor .operate {
+    color: #0074d9;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.btns {
+    padding: 20px;
+}
+
+.cancel-btn {
+    background: #fff;
+    color: #000000;
+    border: 1px solid #7f7f7f;
+    margin-left: 20px;
+}
