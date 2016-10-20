@@ -10,15 +10,9 @@ export default class extends React.Component {
 
     constructor(props) {
         super(props);
-        // this.getItemText = this.getItemText.bind(this);
-    }
-
-    getItemText(e) {
-        return e.target.parentNode.parentNode.firstChild.innerText;
     }
 
     render() {
-        const the = this;
         const {data, onSelect} = this.props;
         return (
             <div className="select-case">
@@ -30,8 +24,7 @@ export default class extends React.Component {
                                 <span
                                     className="add-icon"
                                     onClick={e => {
-                                        let text = the.getItemText(e);
-                                        onSelect(text);
+                                        onSelect(v);
                                     }}
                                 ><i className="fa fa-plus" aria-hidden="true"></i></span>
                             </div>;

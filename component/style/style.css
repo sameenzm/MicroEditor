@@ -45,28 +45,32 @@ h1,h2,h3,h4,h5 {
 
 .editor-main {
     position: relative;
-    border: 1px solid #71A9FC;
+    border: 1px solid #eee;
     width: 300px;
     height: 307px;
+    overflow: auto;
+}
+
+.editor-main:hover {
+    border: 1px solid #71A9FC;
 }
 
 .editor-main #editor {
     font-size: 14px;
     line-height: 16px;
-    height: 302px;
-    width: 256px;
+    /*min-height: 302px;*/
+    width: 239px;
     border: 0;
     outline: none;
     resize:none;  /* 让编辑器不可拖拽改变大小 */
-    word-wrap: normal;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: visible;
 }
 
 .editor-main .gutter {
     float: left;
     background: #eee;
     height: 290px;
-    /*overflow: hidden;*/
 }
 .editor-main .line-number {
     font-size: 16px;
@@ -121,6 +125,10 @@ h1,h2,h3,h4,h5 {
     color: #0074D9;
     float: right;
     padding: 4px 10px;
+}
+
+.multi-editor {
+    width: 698px;
 }
 
 .multi-editor .explain {
